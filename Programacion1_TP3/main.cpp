@@ -22,5 +22,4 @@ void runProgram()
 void defaults()
 {
     srand(time(nullptr));
-    hideCursor();
 }
