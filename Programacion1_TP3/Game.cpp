@@ -8,6 +8,7 @@ Game::Game()
 	{
 		std::string name;
 		std::string nationality;
+		int age;
 
 		clearScreen();
 		std::cout << "Author " << i + 1 << "\n\nName: ";
@@ -17,8 +18,10 @@ Game::Game()
 		std::cout << "Author " << i + 1 << "\n\nNationality: ";
 		std::cin >> nationality;
 
-		const int age = rand() % 99 + 1;
-	
+		clearScreen();
+		std::cout << "Author " << i + 1 << "\n\nAge: ";
+		std::cin >> name;
+
 		authors[i] = new Author(name, nationality, age);
 	}
 
